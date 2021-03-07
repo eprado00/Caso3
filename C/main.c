@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <sys/time.h>
+#include <unistd.h>
 #include <string.h>
+
+#define BILLION  1000000000.0
 
 void setArray(int* pArray, int pSize){
     for (int i = 0; i < pSize; ++i) {
@@ -9,30 +12,38 @@ void setArray(int* pArray, int pSize){
 }
 
 void searchNumber(int pArray[], int pSize, int pNum){
+
+    int found = 0;
     for(int index = 0; index < pSize; index++){
         if (pArray[index] == pNum){
             printf("El numero %d se encuentra en la posicion %d\n", pNum, index);
-            return;
+            found = 1;
+            break;
         }
     }
-    printf("El numero %d no se encuentra en la lista\n", pNum);
+    if (found == 0) {
+        printf("El numero %d no se encuentra en la lista\n", pNum);
+    }
+
 }
 
-int main(){   //si se desea cambiar el tamaño del array se debe cambiar el valor /*size*/ del main siendo 519 264 el maximo
+int main(){   //si se desea cambiar el tamaño del array se debe cambiar el valor /*size*/ del main siendo 519`250 el maximo
 
-    int array[/*size*/500000] = {0};
+    int array[/*size*/519250] = {0};
+    setArray(array,/*size*/519250);
 
-    setArray(array,/*size*/500000);
+    //array[519249] = -1;
 
-    clock_t inicio = clock();
+    struct timespec start, end;
+    clock_gettime(CLOCK_REALTIME, &start);
 
-    searchNumber(array, /*size*/500000, 997946531);
+    searchNumber(array, /*size*/519250, -1);
 
-    printf("tiempo: %f", inicio);
-    clock_t fin = clock();
 
-    clock_t time = (double)(fin - inicio)/ CLOCKS_PER_SEC;
+    clock_gettime(CLOCK_REALTIME, &end);
+    double time_spent = (end.tv_sec - start.tv_sec) +
+                        (end.tv_nsec - start.tv_nsec) / BILLION;
+    printf("Time elpased is %f seconds", time_spent);
 
-    printf("tiempo: %f", inicio);
-
+    return 0;
 }
