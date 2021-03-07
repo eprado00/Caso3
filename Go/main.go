@@ -22,10 +22,7 @@ func main(){
 
 	endTime := time.Now()
 	final:=endTime.Sub(initialTime)
-	fmt.Printf("La llamada tardo %v en correr \n", final)
 	fmt.Printf("La llamada tardo %v en correr ms\n", final.Nanoseconds())//Nanosegundos
-	fmt.Printf("La llamada tardo %v en correr s\n", final.Seconds())//segundos
-	fmt.Printf("La llamada tardo %v en correr m\n", final.Minutes())// minutos
 }
 
 func linearSearch(pArray [SIZE]int, pNumber int){

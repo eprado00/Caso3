@@ -1,0 +1,11 @@
+C:\Users\eduar\Documents\TEC\2021\Analisis_S1\Casos\Caso3\Rust\target\debug\deps\time_macros_impl-a2d66a771ca08680.dll: C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\lib.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\date.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\ext.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\offset.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\mod.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\date.rs
+
+C:\Users\eduar\Documents\TEC\2021\Analisis_S1\Casos\Caso3\Rust\target\debug\deps\time_macros_impl-a2d66a771ca08680.d: C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\lib.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\date.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\ext.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\offset.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\mod.rs C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\date.rs
+
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\lib.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\date.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\ext.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\offset.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\mod.rs:
+C:\Users\eduar\.cargo\registry\src\github.com-1ecc6299db9ec823\time-macros-impl-0.1.1\src\time_crate\date.rs:
