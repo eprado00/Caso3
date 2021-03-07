@@ -1,9 +1,10 @@
 #include <iostream>
 #include <chrono>
 #include <vector>
+#include <stdio.h>
 
 using namespace std;
-const int SIZE = 1000000;
+const long int SIZE = 100000;
 
 void linearSearch(vector<int> pVector, int pNumber){
 	bool found = false;
@@ -28,7 +29,18 @@ int main(){
 		v.push_back(i+1);
 	}
 
+	int ini, fin;
+	double result;
+
+	ini=clock();
+
 	linearSearch(v, SIZE+1);
+
+	fin = clock();
+	
+	cout<<"Tiempo en milisegundos"<<(double)(fin-ini)/CLOCKS_PER_SEC<<endl;
+
+	
 	
 
 	return 0;
