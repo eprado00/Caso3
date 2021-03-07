@@ -1,17 +1,20 @@
 #include <iostream>
-
+#include <chrono>
+#include <vector>
 
 using namespace std;
-const int SIZE = 100000;
+const int SIZE = 1000000;
 
-void linearSearch(int pArray[], int pNumber){
+void linearSearch(vector<int> pVector, int pNumber){
 	bool found = false;
-	for(int i = 0; i<SIZE; i++){
-		if(pArray[i] == pNumber){
-			cout<<"El numero buscado esta en la posicion "<< i<<endl;
+	int position = 0;
+	for(int number : pVector){
+		if(number == pNumber){
+			cout<<"El numero buscado esta en la posicion "<<position<<endl;
 			found = true;
 			break;
 		}
+		position ++;
 		
 	}
 	if(!found)
@@ -20,13 +23,13 @@ void linearSearch(int pArray[], int pNumber){
 }
 
 int main(){
-
-	int array[SIZE];
-	for (int i = 0; i<SIZE; i++){
-		array[i] = i+1;
+	vector<int> v;
+ 	for (int i = 0; i<SIZE; i++){
+		v.push_back(i+1);
 	}
 
-  linearSearch(array, SIZE+1);
+	linearSearch(v, SIZE+1);
+	
 
-  return 0;
+	return 0;
 }
