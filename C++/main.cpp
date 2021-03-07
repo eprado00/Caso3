@@ -38,7 +38,7 @@ int main(){
 
 	fin = clock();
 	
-	cout<<"Tiempo en milisegundos"<<(double)(fin-ini)/CLOCKS_PER_SEC<<endl;
+	cout<<"Tiempo en milisegundos "<<(double)(fin-ini)/CLOCKS_PER_SEC<<endl;
 
 	
 	
