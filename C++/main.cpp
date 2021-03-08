@@ -29,18 +29,17 @@ int main(){
 		v.push_back(i+1);
 	}
 
-	float ini, fin;
-	float result;
+	float start, end;
 
 	//Primera instancia de tiempo
-	ini=clock();
+	start=clock();
 
 	linearSearch(v, SIZE+1);
 
 	//Segunda instancia de tiempo
-	fin = clock();
+	end = clock();
 	
-	cout<<"La llamada tardo "<<(float)((fin-ini)/CLOCKS_PER_SEC)*1000<<" milisegundos en completarse"<<endl;//Milisegundos
+	cout<<"La llamada tardo "<<(float)((end-start)/CLOCKS_PER_SEC)*1000<<" milisegundos en completarse"<<endl;//Milisegundos
 
 	
 	return 0;
