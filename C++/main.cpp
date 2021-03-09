@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 using namespace std;
-const long int SIZE = 100000;
+const long int SIZE = 3000000;
 
 void linearSearch(vector<int> pVector, int pNumber){
 	bool found = false;
@@ -20,8 +20,8 @@ void linearSearch(vector<int> pVector, int pNumber){
 	}
 	if(!found)
 		cout<<"El numero no fue encontrado"<<endl;
-	cout<<"Fin \n";
 }
+
 
 int main(){
 	vector<int> v;
@@ -29,19 +29,18 @@ int main(){
 		v.push_back(i+1);
 	}
 
-	int ini, fin;
-	double result;
+	float start, end;
 
-	ini=clock();
+	//Primera instancia de tiempo
+	start=clock();
 
 	linearSearch(v, SIZE+1);
 
-	fin = clock();
+	//Segunda instancia de tiempo
+	end = clock();
 	
-	cout<<"Tiempo en milisegundos "<<(double)(fin-ini)/CLOCKS_PER_SEC<<endl;
+	cout<<"La llamada tardo "<<(float)((end-start)/CLOCKS_PER_SEC)*1000<<" milisegundos en completarse"<<endl;//Milisegundos
 
 	
-	
-
 	return 0;
 }

@@ -15,14 +15,18 @@ func main(){
 		testArray[i] = i+1;
 	}
 
-	//Llamada a la funcion
+	//Primera instancia de tiempo	
 	initialTime := time.Now()
 
+	//Llamada a la funcion
 	linearSearch(testArray, SIZE+1)
 
+	//Segunda instancia de tiempo
 	endTime := time.Now()
+
+	//Calculo tiempo final
 	final:=endTime.Sub(initialTime)
-	fmt.Printf("La llamada tardo %v en correr ms\n", final.Nanoseconds())//Nanosegundos
+	fmt.Printf("La llamada tardo %v milisegundos en completarse \n", (final.Seconds()*1000))//Milisegundos
 }
 
 func linearSearch(pArray [SIZE]int, pNumber int){
