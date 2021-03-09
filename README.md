@@ -1,11 +1,11 @@
-#Hola <h1>
+# Hola <h1>
 
 estoy probando
-'comillas'
+`comillas`
 
-##Que pasa<h2>
-###Tres gatos<h3>
+## Que pasa<h2>
+### Tres gatos<h3>
 
-#uno otra vez<h1>
+# uno otra vez<h1>
 
 >nada
