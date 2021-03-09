@@ -3,17 +3,9 @@ extern crate time;
 
 use rand::Rng;
 use std::time::Instant;
-use time::Instant;
 
-const ARRSIZE:usize = 10000000;
+const ARRSIZE:usize = 519250;      //no agregar 0's ya que tarda demasiado creando array
 
-/*
-*Funcion de busqueda linear:
-*Recorre el arreglo y si encuentra el numero
-*buscado imprime la posicion
-*Si recorre todo el arreglo y no lo encuentra
-*imprime ese resultado
-*/
 fn linear_search(p_array: &mut Vec<i32>, p_size: usize, p_num:i32){
     for index in 0..p_size-1{
         if p_array[index] == p_num {
@@ -26,7 +18,7 @@ fn linear_search(p_array: &mut Vec<i32>, p_size: usize, p_num:i32){
 
 fn main() {
     let mut rng = rand::thread_rng();
-    let n = 1000000;     //no agregar 0's ya que tarda demasiado creando array
+    let n = ARRSIZE;
 
     let mut array:Vec<i32> = Vec::new();
 
