@@ -12,7 +12,8 @@
 
 # Pasos seguidos en la pruebas
 
-Se sometió a los programas implementados en Go, Rust, C++ y C a pruebas de busqueda linear donde se buscaba un numero que no estaría en la lista para que se tuviera que recorrer toda. \n
+Se sometió a los programas implementados en Go, Rust, C++ y C a pruebas de busqueda linear donde se buscaba un numero que no estaría en la lista para que se tuviera que recorrer toda. 
+
 Las pruebas van aumentando el tamaño de la lista de esta forma:
   - 1000000
   - 2000000
